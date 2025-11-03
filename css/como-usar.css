@@ -1,0 +1,154 @@
+/* === CONFIGURACIÓN GENERAL === */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(180deg, #3e003e, #000);
+  color: white;
+}
+
+/* === NAVBAR === */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 10px 30px;
+}
+
+
+.logo {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.dot {
+  color: #fff;
+}
+
+.search-bar input {
+  width: 280px;
+  background: #d6a5f7;
+  border: none;
+  border-radius: 30px;
+  padding: 7px 15px;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  background: linear-gradient(90deg, #d46bff, #8b1bff);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.user-icon {
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === CONTENIDO PRINCIPAL === */
+.contenido {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.intro {
+  margin: 20px 0 40px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* === BLOQUES === */
+.bloque {
+  margin-bottom: 40px;
+}
+
+.bloque h2 {
+  color: #fff;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.bloque p,
+.bloque ul {
+  line-height: 1.6;
+  color: #eaeaea;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 40px;
+}
+
+/* === IMÁGENES === */
+.img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.img-container img {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* === FOOTER === */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #111;
+  padding: 40px 60px;
+  color: white;
+  font-size: 0.9em;
+}
+
+.footer-left .logo {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.footer-center a,
+.footer-right a {
+  color: #d6a5f7;
+  text-decoration: none;
+}
+
+.footer-center p,
+.footer-right p {
+  margin: 6px 0;
+}
+
+.footer-left p {
+  margin: 5px 0;
+}

@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (usuario) {
         alert("Inicio de sesión correcto ✅");
-        window.location.href = "../html/pagina_principal.html";
+        window.location.href = "../html/principal.html";
       } else {
         alert("Correo o contraseña incorrectos. Verifica tus datos o regístrate.");
       }
@@ -60,4 +60,78 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../html/registro.html";
     });
   }
+//PRINCIPAL
+
+"btn-login"
+
+ const btnLogin2 = document.getElementById("btn-login");
+  if (btnLogin2) {
+    btnLogin2.addEventListener("click", () => {
+      window.location.href = "../html/index.html";
+    });
+  }
+
+
+
+
+
+//MENU
+
+// Seleccionamos los elementos del DOM
+const menuBtns = document.querySelectorAll(".menu-icon"); // puede haber varios
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
+
+// Recorremos todos los botones con esa clase
+menuBtns.forEach(menuBtn => {
+  menuBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("active");   // Abre o cierra el menú
+    overlay.classList.toggle("show");     // Muestra o esconde el fondo oscuro
+  });
 });
+
+// Si se hace clic fuera del menú (en el overlay), se cierra
+overlay.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+  overlay.classList.remove("show");
+});
+
+
+
+// ====== BOTÓN "QUIÉNES SOMOS" ======
+const btnQuienes = document.getElementById("btnQuienes");
+if (btnQuienes) {
+  btnQuienes.addEventListener("click", () => {
+    window.location.href = "../html/quien.html";
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+
