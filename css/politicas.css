@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(180deg, #0a0013, #1a0033);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* TITULO */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+/* CONTENIDO */
+.contenido {
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #240046;
+    border-radius: 10px;
+    margin-bottom: 70px;
+}

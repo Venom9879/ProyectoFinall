@@ -1,0 +1,74 @@
+
+<link rel="stylesheet" href="../css/notificaciones.css"> 
+<header class="navbar">
+  <button class="menu-icon">☰</button>
+  <div class="logo">Qool<span class="dot">.</span></div>
+  <div class="search-bar">
+    <input type="text" placeholder="¿Estás buscando algo?">
+  </div>
+  <div class="nav-buttons">
+    <button id="btnConsulta" class="btn-login">NUEVA CONSULTA</button>
+    <button id="btnPublicaciones" class="btn-register">PUBLICACIONES</button>
+    <div class="btnNotificaciones">
+    <img id="iconoNotificaciones" src="../img/imgnotificaciones.png" alt="boton a notificaciones">
+    </div>
+    <div id="btnPerfil" class="user-icon">OA</div>
+    <!-- Panel de notificaciones-->
+    <div id="buzon-entrada" class="panel-superpuesto oculto">
+      <div class="buzon-header">
+        <span class="buzon-titulo">Buzón de entrada</span>
+        <button id="btnCerrar">Cerrar</button>
+      </div>
+      <div class="mensaje-card">
+        <div id="contenido-corto">
+            <h3>¡Bienvenido a Qool!</h3>
+            <p>Es un placer conocerte...</p>
+            <div class="mensaje-footer">
+                <span id="btnVerMensaje" class="ver-mensaje">Ver mensaje</span>
+            </div>
+        </div>
+        <div id="contenido-largo" style="display: none;">
+            <h3>📩 ¡Bienvenido a Qool!</h3>
+            <br>
+            <p>Es un placer conocerte 🎉</p>
+            <p>Nos alegra que formes parte de Qool, la comunidad educativa donde compartir conocimiento es más fácil que nunca.</p>
+            <p>A partir de ahora vas a poder realizar consultas, responder dudas de otros usuarios y participar activamente en un espacio pensado para aprender, enseñar y conectar.</p>
+            <p>Recordá que podés publicar de forma anónima si lo deseás, explorar las publicaciones recientes desde el menú y configurar tu perfil cuando quieras.</p>
+            <p>💡 Consejo: empezá presentándote con una consulta o ayudando a alguien que lo necesite — ¡cada aporte cuenta!</p>
+            <p>Gracias por unirte a esta comunidad.</p>
+            <p>El equipo de Qool te desea una excelente experiencia ✨</p>
+            
+            <div class="mensaje-footer">
+                <span id="btnVolver" class="ver-mensaje">Cerrar mensaje</span>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+  </div>
+</header>
+
+<!-- Menú lateral -->
+<aside id="sidebar" class="sidebar">
+  <ul class="menu">
+    <li id="btnVolverInicio"><span class="icon">🏠</span>Inicio</li>
+    <li id="btnHacerConsulta"><span class="icon">📚</span>Hacer una consulta</li>
+    <li id="btnVerPublicaciones" ><span class="icon">💬</span>Ver publicaciones</li>
+    <li class="submenu-title"><span class="icon">📖</span>+ Información</li>
+    <ul class="submenu">
+      <li id="btnQuienes">• Quiénes somos</li>
+      <li id="btnComo">• Cómo usar el sitio</li>
+      <li id="btnEstudio">• Estudia mejor</li>
+      <li id="btnSoporte">• Soporte al usuario</li>
+      <li id="btnFAQ">• Preguntas Frecuentes (FAQ)</li>
+      <li id="btnTerminos">• Términos y condiciones</li>
+      <li id="btnPoliticas">• Políticas de privacidad</li>
+    </ul>
+  </ul>
+</aside>
+
+<!-- Fondo oscuro -->
+<div id="overlay" class="overlay"></div>
+
+

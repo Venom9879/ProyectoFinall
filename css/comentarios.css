@@ -1,0 +1,193 @@
+/* Importar fuentes si no están en la base */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* === CONFIGURACIÓN GENERAL === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    /* Fondo oscuro principal de Qool */
+    background-color: #0a0a0a; 
+}
+
+/* === ENVOLTORIO PRINCIPAL Y LAYOUT DE 2 COLUMNAS === */
+.main-content-publicacion {
+    padding: 80px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.publicacion-wrapper {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px; 
+}
+
+/* --- Columna Izquierda (Pregunta Original) --- */
+.columna-pregunta {
+    flex: 1.5; /* Ocupa un poco más de espacio */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --- Columna Derecha (Respuestas) --- */
+.columna-respuestas {
+    flex: 1; /* Ocupa el espacio restante */
+}
+
+
+/* === ESTILO DE LA TARJETA DE PREGUNTA === */
+.pregunta-card {
+background: linear-gradient(45deg, #6b1349, #280452);
+    border-radius: 15px;
+    padding: 20px 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-left: 6px solid #4f009d;
+    min-height: 200px; /* Altura mínima para que se vea como en la imagen */
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #fff;
+}
+.user-ua { /* Color específico para Usuario Anónimo */
+    background: #5d008d; 
+}
+
+.user-name {
+    font-weight: 600;
+    color: #ff4c9d; /* Color rosa del nombre */
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #2a0044;
+}
+
+.post-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+
+/* === BLOQUE DE ACCIONES (ICONOS Y RESPONDER) === */
+.post-actions-block {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-icons-row {
+    display: flex;
+    gap: 15px;
+}
+
+.action-icon {
+    cursor: pointer;
+    color: #b44cff;
+    transition: 0.3s;
+}
+
+.action-icon .icon {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.responder-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    background: #2a0044; /* Fondo del botón Responder */
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.responder-box:hover {
+    background: #3e0069;
+}
+
+.icon-chat {
+    font-size: 1.2em;
+    color: #ff4c9d;
+}
+
+.btn-responder-link {
+    color: #ff4c9d;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95em;
+}
+
+
+/* === ESTILO DE LAS RESPUESTAS (DERECHA) === */
+.respuestas-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.respuesta-card {
+      background: linear-gradient(to right, #3c0b53, #19031b);
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); 
+    border-radius: 15px;
+    padding: 20px 25px;
+    border-left: 6px solid #b44cff; /* Borde morado más claro */
+}
+
+.respuesta-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.user-number {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #b44cff; /* Círculo morado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.user-name-resp {
+    font-weight: 600;
+    color: #ff4c9d; /* Nombre rosa */
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #2a0044;
+}
+
+.respuesta-content p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #e0e0e0;
+}

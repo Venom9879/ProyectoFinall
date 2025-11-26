@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soporte al usuario - Qool</title>
+  <link rel="stylesheet" href="../css/soporte.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/footer.css"> 
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div id="header-container"></div>
+
+  <!-- CONTENIDO PRINCIPAL -->
+    <section class="hero">
+    <h1>SOPORTE AL USUARIO</h1>
+    </section>
+  <main class="support-section">
+    <p class="intro">
+      Si tenés un problema, duda técnica o querés reportar contenido, podés contactarnos por cualquiera de estos canales oficiales:
+    </p>
+
+    <div class="contact-info">
+      <p><strong>📞 Teléfono (línea de soporte):</strong> +54 261 585 0123</p>
+      <p><strong>📧 Correo:</strong> qool.soporte@gmail.com</p>
+      <p><strong>📷 Instagram:</strong> @qool_2025</p>
+      <p><strong>📘 Facebook:</strong> facebook.com/Qool_2025</p>
+      <p><strong>🎵 TikTok:</strong> @qool_2025</p>
+    </div>
+
+    <div class="support-content">
+      <div id="contenedorsuperior">
+      <div class="text-column">
+        <section class="section">
+          <h2>¿Qué podés reportar aquí?</h2>
+          <ul>
+            <li>Problemas para iniciar sesión o registrarte.</li>
+            <li>Publicaciones que infrinjan las normas (spam, lenguaje ofensivo, información personal).</li>
+            <li>Errores técnicos (pantalla en blanco, botones que no funcionan, fallos en notificaciones).</li>
+            <li>Dudas sobre privacidad y uso de datos.</li>
+            <li>Sugerencias o mejoras para Qool.</li>
+          </ul>
+        </section>
+      </div>
+      <div class="image-column">
+        <!-- ESPACIO RESERVADO PARA LA IMAGEN -->
+        <img src="../img/imgsoporte.png" alt="Equipo de soporte" class="support-img">
+      </div>
+      </div>
+      <div class="text-column">
+        <section class="section">
+          <h2>Cómo reportar contenido inadecuado</h2>
+          <p>
+            Para ayudarnos a gestionar el problema lo más rápido posible, por favor incluí en tu reporte:
+          </p>
+          <ul>
+            <li>Tu nombre de usuario (si corresponde).</li>
+            <li>Enlace o captura de la publicación/comentario implicado.</li>
+            <li>Descripción breve del problema (qué ocurrió y por qué es inapropiado).</li>
+            <li>Fecha y hora en que pasó el evento.</li>
+          </ul>
+          <p>
+            Podés enviar este reporte por correo a <strong>qool.soporte@gmail.com</strong>, o usar el formulario de soporte dentro de la sección <em>Información → Soporte al usuario</em>.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Sugerencias y feedback</h2>
+          <p>
+            ¿Tenés una idea para mejorar Qool? ¡Contanos!
+          </p>
+          <p>
+            Enviá tus sugerencias a <strong>qool.soporte@gmail.com</strong> o un mensaje privado a nuestras cuentas en Instagram/Facebook/TikTok.
+          </p>
+        </section>
+
+        <form class="support-form">
+          <label for="usuario">Tu usuario</label>
+          <input type="text" id="usuario" placeholder="Ej: @nombre_usuario">
+
+          <label for="problema">Tu problema</label>
+          <textarea id="problema" rows="5" placeholder="Describe tu problema..."></textarea>
+
+          <label for="fecha">Fecha y hora</label>
+          <input type="text" id="fecha" placeholder="Ej: 04/11/2025 - 10:30 hs">
+
+          <button id="btnEnviar">Enviar</button>
+        </form>
+      </div>
+
+      
+    </div>
+  </main>
+<script src="../js/main.js"></script>
+  <!-- FOOTER -->
+  <footer></footer>
+</body>
+</html>

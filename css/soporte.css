@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(180deg, #0a0013, #1a0033);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* === CONTENIDO PRINCIPAL === */
+.hero {
+  text-align: center;
+  padding: 100px 0 80px 0;
+  background: linear-gradient(to right, #afc9f8, #006dfc);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+
+.support-section {
+  padding: 60px 10%;
+  line-height: 1.7;
+  font-size: 1.1em;
+  color: #eee;
+}
+
+
+.intro {
+margin-bottom: 40px;
+  font-size: 1.4em; /* Más pequeño, más elegante */
+  font-weight: 500; /* Menos negrita */
+  line-height: 1.6;
+  text-align: center;
+  color: #f7f7f7; /* Color blanco puro para el mensaje principal */
+}
+
+.contact-info{
+background: rgba(30, 23, 44, 0.8); 
+  padding: 25px 40px; /* Más padding */
+  border-radius: 12px; /* Bordes más redondeados */
+  border: 1px solid rgba(157, 77, 130, 0.5); /* Borde sutil del color de tu tema */
+  /* Sombra interna sutil para un efecto "hundido" */
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5), 0 4px 10px rgba(0,0,0,0.4);
+
+}
+.contact-info p {
+margin: 8px 0; /* Más separación entre líneas de contacto */
+}
+
+/* === CONTENIDO Y FORMULARIO === */
+#contenedorsuperior{
+  display:flex;
+  justify-content: space-between;
+}
+.support-content {
+margin-top: 40px; /* Más espacio arriba */
+}
+
+.text-column {
+  margin-right: 20px;
+}
+
+.image-column {
+  width: 40%;
+}
+
+.support-img {
+width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 8px; /* Bordes suaves en la imagen */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para que la imagen resalte */
+
+}
+
+.section {
+  margin-bottom: 35px;
+}
+
+.section h2 {
+ color: #fff;
+  margin-bottom: 15px;
+  padding: 10px 25px; /* Más relleno */
+  /* Fondo sólido con transparencia sutil y bordes redondeados */
+  background: rgba(147, 91, 190, 0.3); /* Un toque de púrpura/violeta */
+  border-left: 4px solid #d6a5f7; /* Línea de color a la izquierda como separador moderno */
+  border-radius: 4px;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase; /* MAYÚSCULAS para modernidad */
+}
+
+.section ul {
+  margin-top: 8px;
+  padding-left: 20px;
+  list-style-type: '👉 ';
+}
+
+/* === FORMULARIO === */
+.support-form {
+display: flex;
+  flex-direction: column;
+  gap: 15px; /* Más espacio entre campos */
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(30, 23, 44, 0.6); /* Fondo para agrupar el formulario */
+  border-radius: 12px;
+}
+.support-form label{
+  font-weight: 600;
+  color: #d6a5f7; /* Color de acento */
+}
+.support-form input,
+.support-form textarea {
+/* Fondo más oscuro y con transparencia para tema oscuro */
+  background: rgba(255, 255, 255, 0.08); 
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px; 
+  padding: 12px; /* Más relleno, se siente más espacioso */
+  font-size: 1em;
+  /* Animación de transición para el focus */
+  transition: border-color 0.3s ease;
+}
+
+#btnEnviar {
+background: linear-gradient(90deg, #d6a5f7, #9b5085); /* Gradiente en el botón */
+  border: none;
+  border-radius: 8px; 
+  padding: 14px; /* Botón más grande */
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #0a0013; /* Texto oscuro para contraste */
+  /* Sombra sutil y transición */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+#btnEnviar:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 6px 15px rgba(214, 165, 247, 0.4); /* Sombra que brilla al pasar el ratón */
+}

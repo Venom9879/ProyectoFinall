@@ -1,0 +1,124 @@
+/* Importar fuentes si no están en la base */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* === ESTILOS GLOBALES DE LA PÁGINA === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    /* Fondo que envuelve el formulario (similar al body de otras vistas) */
+    background: #0a0a0a; 
+    overflow-x: hidden;
+}
+
+/* === CONTENIDO PRINCIPAL (Centrado) === */
+.main-content {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    padding: 60px 20px;
+    box-sizing: border-box;
+    min-height: calc(100vh - 120px); /* Para asegurar que el footer esté abajo */
+}
+
+.respuesta-form-container {
+    width: 100%;
+    max-width: 650px; 
+    padding: 30px;
+    border-radius: 15px;
+    /* Fondo morado oscuro exacto de la imagen */
+    background: linear-gradient(135deg, #18002d 0%, #3e0069 100%); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Sección de Usuario/Anónimo --- */
+.user-info-simple-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.user-field {
+    flex: 2; /* Ocupa más espacio para el input de usuario */
+}
+
+.anonimo-field {
+    flex: 1; /* Ocupa menos espacio para el botón de anónimo */
+}
+
+.label-simple {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-simple {
+    width: 100%;
+    background: #0a0013; /* Fondo negro para el input */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 12px;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.btn-anonimo-simple {
+    background: #0a0013; /* Fondo negro para el botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    height: 40px; /* Misma altura que el input */
+}
+
+/* --- Área de Respuesta --- */
+.textarea-simple-respuesta {
+    width: 100%;
+    background: #0a0013; /* Fondo negro para el textarea */
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    color: #e0e0e0;
+    font-size: 1em;
+    resize: none; 
+    min-height: 200px;
+    outline: none;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* --- Botón Enviar --- */
+.btn-enviar-simple {
+    display: block;
+    margin-left: auto; /* Alinea el botón a la derecha */
+    width: 150px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+    /* Gradiente sutil para el fondo del botón */
+    background: linear-gradient(90deg, #ff4c9d, #e03c8c); 
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    /* Borde rosa brillante para el efecto de la imagen */
+    box-shadow: 0 0 0 2px #ff4c9d; 
+}
+.btn-enviar-simple:hover {
+    background: #ff4c9d;
+    transform: scale(1.02);
+}

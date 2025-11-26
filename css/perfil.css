@@ -1,0 +1,105 @@
+/* Importar fuentes si no están en la base */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* === ESTILOS GLOBALES DE LA PÁGINA === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #0a0a0a; 
+    min-height: 100vh;
+}
+
+/* === CONTENIDO PRINCIPAL === */
+.main-content {
+    width: 100%;
+    max-width: 1000px; /* Ancho máximo similar al de la imagen */
+    margin: 0 auto;
+    padding: 80px 30px; /* Espacio para el header fijo y los costados */
+}
+
+/* === PERFIL HEADER === */
+.perfil-header {
+    border-bottom: 2px solid #5d008d; /* Línea de separación sutil */
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.user-avatar-box {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff4c9d, #5d008d); /* Gradiente del círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.2em;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.username {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #ff4c9d; /* Color de texto del username */
+    margin: 0 0 10px 0;
+}
+
+.stat {
+    font-size: 0.9em;
+    color: #ccc;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.stat span {
+    font-weight: 600;
+    color: #fff;
+}
+
+.edit-link {
+    display: inline-block;
+    font-size: 0.9em;
+    color: #b44cff; /* Enlace morado */
+    text-decoration: none;
+    margin-top: 5px;
+    transition: 0.2s;
+}
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+/* === MIS PUBLICACIONES === */
+.section-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #ddd;
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post-card {
+    background: #1a0033; /* Fondo oscuro morado/negro de las tarjetas */
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    border-left: 5px solid #6a00ff; /* Borde izquierdo morado */
+}

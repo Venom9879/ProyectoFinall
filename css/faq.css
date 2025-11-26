@@ -1,0 +1,81 @@
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  /* Fondo más profundo y uniforme, típico de interfaces oscuras modernas */
+  background: linear-gradient(180deg, #020005, #140026); 
+  color: white;
+  overflow-x: hidden;
+  line-height: 1.7; /* Mejor legibilidad en todo el cuerpo */
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 0 80px 0;
+  background: linear-gradient(90deg, #7b00ff, #ff0077);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+
+.intro {
+  margin: 30px auto 60px; /* Más espacio después de la intro */
+  line-height: 1.8;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #bfa5d8;
+}
+
+
+/* ===== FAQ ITEMS (Contenedor de las preguntas) ===== */
+.faq-container {
+    padding: 40px 10%; /* Más relleno, alineado con el banner */
+    max-width: 1200px;
+    margin: 0 auto; /* Centramos el contenido principal */
+}
+
+.faq-item {
+    /* Fondo más sutil y consistente con el tema oscuro */
+    background: rgba(30, 0, 48, 0.7); 
+    padding: 30px; /* Más relleno interior */
+    border-radius: 12px;
+    margin-bottom: 30px; /* Más separación entre ítems */
+    /* Cambiamos el borde lateral por un degradado/sombra elegante */
+    border-left: none; 
+    border-bottom: 3px solid #6a00ff; /* Línea de acento abajo para separación */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); 
+    transition: transform 0.3s ease; /* Pequeña animación al pasar el ratón */
+}
+
+.faq-item:hover {
+    /* Se levanta un poco al pasar el ratón */
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 15px rgba(106, 0, 255, 0.2);
+}
+
+/* 🌟 Título de la Pregunta (h2) */
+.faq-item h2 {
+    margin-top: 0;
+    font-size: 1.5em; 
+    font-weight: 600;
+    color: #d6a5f7; /* Color de acento suave (púrpura) */
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1); /* Línea sutil bajo el título */
+    padding-bottom: 10px;
+}
+
+/* Estilo del cuerpo de la respuesta */
+.faq-item p {
+    color: #c0c0c0;
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+/* Estilo para los ejemplos dentro de la Pregunta 4 */
+.faq-item b {
+    color: #d6a5f7;
+    font-weight: 700;
+}

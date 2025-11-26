@@ -1,0 +1,104 @@
+/* Estilos del contenedor principal (sin cambiar ID ni clases base) */
+#buzon-entrada {
+    position: fixed; /* Hace que flote */
+    top: 70px;       /* Ajusta según la altura de tu barra de navegación */
+    right: 100px;     /* Margen derecho */
+    width: 320px;
+    background-color: #9d4d82; /* El color violeta/vino de la imagen */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 10px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1000;   /* Para asegurar que esté encima de todo */
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Clase para ocultarlo (necesaria para tu JS) */
+.oculto {
+    display: none;
+    /* Opcional: si quieres animación en lugar de display:none, 
+       avísame para cambiarlo a opacity: 0 */
+}
+
+/* --- Estilos Internos --- */
+
+/* Barra superior: Título y botón cerrar */
+.buzon-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* El botón cerrar estilizado como texto simple (como en la imagen) */
+#btnCerrar {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 0.75rem;
+    cursor: pointer;
+    opacity: 0.8;
+    padding: 0;
+}
+
+#btnCerrar:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* La tarjeta gris interna */
+.mensaje-card {
+    background-color: #e6e6e6; /* Gris claro */
+    color: #333; /* Texto oscuro */
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Título del mensaje */
+.mensaje-card h3 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Cuerpo del mensaje */
+.mensaje-card p {
+    margin: 0 0 10px 0;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+/* Pie de la tarjeta "Ver mensaje" */
+.mensaje-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ver-mensaje {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #9d4d82; /* Mismo color del fondo principal */
+    cursor: pointer;
+}
+
+.ver-mensaje:hover {
+    text-decoration: underline;
+}
+/* Clase para cuando abres el mensaje completo */
+#buzon-entrada.expandido {
+   width: 400px;  
+    /*si el texto es muy largo, limitamos la altura */
+    max-height: 80vh; 
+    overflow-y: auto;
+}
+
+/* Ajuste para que el texto se lea bien en modo grande */
+#buzon-entrada.expandido .mensaje-card {
+    font-size: 1rem;
+}

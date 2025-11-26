@@ -1,0 +1,145 @@
+/* Importar fuentes si no están en la base */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* === ESTILOS GLOBALES DE LA PÁGINA === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #0a0013, #1a0033);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* El contenido principal que se ve en la imagen */
+.main-content {
+    display: flex;
+    /* Para dejar espacio para la barra de navegación que se carga primero */
+    padding-top: 30px; 
+padding-left: 50px;
+    padding-right: 30px;
+background: linear-gradient(180deg, #0a0013, #1a0033);
+}
+
+/* El menú lateral se gestiona con menu.css */
+/* La sidebar está fixed, así que solo necesitamos el padding en main-content */
+
+
+/* === CONTENEDOR DE PUBLICACIONES === */
+.posts-container {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    padding: 30px 0;
+}
+
+.post-card {
+  background: linear-gradient(to right, #3c0b53, #520434);
+    border-radius: 12px; /* Ligeramente menos redondeado */
+    padding: 25px 30px; /* Más padding interno */
+    margin-bottom: 25px;
+    
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); 
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    border-left: 5px solid #6a00ff; 
+    transition: transform 0.2s ease;
+}
+
+/* === CABECERA DEL POST (Icono y nombre) === */
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #fff;
+    /* Colores específicos del icono según la imagen */
+}
+
+.user-ua { /* Usuario anónimo */
+    background: #5d008d; 
+}
+.user-p { /* PriCiSa */
+    background: #7500b3; 
+}
+.user-c { /* Carla */
+    background: #9d00ff; 
+}
+
+.user-name {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+/* === CONTENIDO DEL POST === */
+.post-content p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-right: 150px; /* Espacio para que el texto no se superponga con los íconos de acción */
+}
+
+
+/* === ACCIONES DEL POST (Likes y Comentarios a la derecha) === */
+.post-actions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.action-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #b44cff; /* Color de los íconos principales */
+}
+
+.action-icon:hover {
+    color: #ff4c9d; /* Color al pasar el ratón */
+    transform: scale(1.1);
+}
+
+.action-icon .icon {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1; /* Para ajustar el ícono al tamaño */
+}
+
+.action-icon.like {
+    color: #ff009d; /* El corazón tiene un color más rosa/fucsia */
+}
+.action-icon.comment {
+    color: #b44cff; /* El comentario tiene un color más morado */
+    margin-top: 15px; /* Separación entre el like y el comentario */
+}
+
+/* === AJUSTES DE TAMAÑO PARA EL DISPOSITIVO FIJO (SIDEBAR) === */
+/* Aseguramos que la sidebar esté visible por defecto para la vista de publicaciones, 
+   ya que el usuario ya habrá iniciado sesión */
+
+/* Se asume que en principal.html o en la lógica de main.js se manejaría que,
+   una vez logueado, el usuario ya no vea los botones de login/registro 
+   sino los botones de consulta/publicaciones, como se ve en la imagen. */

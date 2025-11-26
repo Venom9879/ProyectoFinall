@@ -7,7 +7,7 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(90deg, #2a0845, #6441A5);
+  background-image: url("../img/Primerfondo.png");
   display: flex;
   justify-content: center;
   align-items: center;

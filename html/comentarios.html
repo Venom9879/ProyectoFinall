@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qool - Pregunta con Respuestas</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/footer.css"> 
+    <link rel="stylesheet" href="../css/comentarios.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <div id="header-container"></div>
+    <main class="main-content-publicacion">
+        <div class="publicacion-wrapper">
+            
+            <section class="columna-pregunta">
+                <article class="pregunta-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <div class="user-icon user-ua">UA</div>
+                            <span class="user-name">Usuario anónimo</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>
+                            No entiendo función trigonométrica, especialmente cómo graficarlas. Hice un ejercicio del cuadernillo pero no me da. Me queda algo rarísimo.
+                        </p>
+                    </div>
+                </article>
+
+                <div class="post-actions-block">
+                    <div class="action-icons-row">
+                        <div class="action-icon comment"><span class="icon">💬</span></div>
+                        <div class="action-icon like"><span class="icon">♡</span></div>
+                        <div class="action-icon dislike"><span class="icon">👎</span></div>
+                    </div>
+
+                    <div class="responder-box">
+                        <span class="icon-chat">💬</span>
+                        <a href="#" class="btn-responder-link">Responder</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="columna-respuestas">
+                <div class="respuestas-list">
+
+                    <article class="respuesta-card">
+                        <div class="respuesta-header">
+                            <span class="user-number">1</span>
+                            <span class="user-name-resp">Usuario 1</span>
+                        </div>
+                        <div class="respuesta-content">
+                            <p>
+                                Las funciones trigonométricas suelen verse raras al principio, sobre todo si no ubicás bien los ejes. Fijate que la seno y la coseno son ondas que oscilan entre 1 y -1. Empiezan en puntos distintos; el seno arranca en 0 y la coseno en 1. Si tu gráfico se ve 'raro', puede que estés usando grados en lugar de radianes, o que te falte ajustar la escala del eje x. Probá marcar algunos valores clave (0°, 90°, 180°, 270°, 360°) y unirlos suavemente: vas a notar la forma de la onda enseguida.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="respuesta-card">
+                        <div class="respuesta-header">
+                            <span class="user-number">2</span>
+                            <span class="user-name-resp">Usuario 2</span>
+                        </div>
+                        <div class="respuesta-content">
+                            <p>
+                                A veces el gráfico sale raro porque no estás considerando los valores negativos o el ciclo completo de la función. Probá extender el eje x un poco más hacia la izquierda y la derecha, así ves cómo se repite la forma. También fijate el valor de "a" en la fórmula (por ejemplo, y = a·sen(x)): si es mayor que 1 o menor que -1, la onda se estira o se aplana. Eso puede hacer que el dibujo se vea distinto, pero no está mal, solo cambia la amplitud de la función.
+                            </p>
+                        </div>
+                    </article>
+                    
+                </div>
+            </section>
+
+        </div>
+    </main>
+ <footer></footer>
+<script src="../js/main.js"></script>
+    </body>
+</html>

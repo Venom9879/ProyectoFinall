@@ -2,153 +2,145 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(180deg, #3e003e, #000);
-  color: white;
-}
-
-/* === NAVBAR === */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #000;
-  padding: 10px 30px;
-}
-
-
-.logo {
-  font-size: 1.8em;
-  font-weight: 700;
-}
-
-.dot {
   color: #fff;
-}
-
-.search-bar input {
-  width: 280px;
-  background: #d6a5f7;
-  border: none;
-  border-radius: 30px;
-  padding: 7px 15px;
-  color: #000;
-  font-weight: 500;
-}
-
-.nav-buttons {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.btn {
-  background: linear-gradient(90deg, #d46bff, #8b1bff);
-  border: none;
-  padding: 8px 15px;
-  border-radius: 30px;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.user-icon {
-  background-color: #fff;
-  color: #000;
-  font-weight: 700;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* Un gradiente más oscuro, profundo y moderno para el fondo */
+  background: linear-gradient(180deg, #0a0013 0%, #30004a 50%, #1a0033 100%); 
+  overflow-x: hidden;
 }
 
 /* === CONTENIDO PRINCIPAL === */
-.contenido {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 20px;
-  text-align: left;
+.hero {
+  text-align: center;
+  padding: 100px 0 80px 0;
+  background: linear-gradient(90deg, #7b00ff, #ff0077);
 }
 
-h1 {
-  text-align: center;
-  font-size: 2em;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
+.hero h1 {
+  font-size: 2.5em;
+  font-weight: 700;
 }
+
+
+.contenido {
+  padding: 60px 8%; /* Reducimos el padding lateral ligeramente */
+  margin: 0 auto; /* Centramos el contenido */
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #e0e0e0;
+}
+
+
 
 .intro {
-  margin: 20px 0 40px;
-  line-height: 1.6;
+  margin: 30px auto 30px; /* Más espacio después de la intro */
+  line-height: 1.8;
   text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #bfa5d8;
 }
 
-/* === BLOQUES === */
+/* === BLOQUES (Las secciones de la guía) === */
+#bloque-img{
+  margin-bottom: 50px;
+}
 .bloque {
-  margin-bottom: 40px;
+  margin-bottom: 50px; /* Más espacio entre las secciones */
+  padding: 30px;
+  /* Fondo semi-transparente para hacer que la sección resalte contra el fondo oscuro */
+  background: rgba(25, 0, 40, 0.6); 
+  border-radius: 12px; /* Bordes redondeados modernos */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra suave para que flote */
 }
 
+/* 🌟 Estilo para el Título de cada Sección */
 .bloque h2 {
-  color: #fff;
-  font-size: 1.4em;
-  margin-bottom: 10px;
+  color: #d6a5f7; /* Color de acento brillante */
+  font-size: 1.6em; /* Títulos más grandes */
+  margin-bottom: 15px;
+  border-left: 4px solid #d6a5f7; /* Barra de color a la izquierda (muy moderno) */
+  padding-left: 15px;
 }
 
 .bloque p,
 .bloque ul {
-  line-height: 1.6;
-  color: #eaeaea;
+  line-height: 1.7;
+  color: #d0d0d0;
 }
 
-ul {
-  list-style: disc;
-  padding-left: 40px;
+.support-section ul {
+  list-style-type: none; /* Quitamos el punto por defecto */
+  padding-left: 0;
 }
 
-/* === IMÁGENES === */
-.img-container {
+.support-section ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  /* Reemplazamos el punto con un checkmark o un ícono */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="%23d6a5f7" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 16px;
+}
+
+/* === SECCIÓN IMÁGENES (Slider) === */
+.slider {
+  position: relative;
+  width: 90%; /* Más ancho */
+  max-width: 950px;
+  margin: 60px auto;
+  overflow: hidden;
+  border-radius: 15px; /* Bordes más pronunciados */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Sombra más dramática */
+  border: 3px solid #d6a5f7; /* Borde visible para destacar el slider */
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.6s ease-in-out; /* Transición un poco más lenta */
+}
+
+.slides img {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 30px 0;
+  border-radius: 12px;
+  flex-shrink: 0;
+  /* Oscurecemos ligeramente la imagen si es muy brillante, aunque en este caso la dejamos tal cual */
+  filter: saturate(1.1); 
 }
 
+/* Flechas de navegación */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(214, 165, 247, 0.7); /* Usamos el color de acento con transparencia */
+  color: #1a0033; /* Texto oscuro para contraste */
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.9;
+  z-index: 10; /* Z-index más alto */
+  transition: background-color 0.3s;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.prev:hover, .next:hover {
+  background-color: #d6a5f7;
+  opacity: 1;
+}
+
+/* === IMAGEN INFERIOR (Placeholder) === */
+.img-container {
+    padding: 60px 0;
+    text-align: center;
+}
 .img-container img {
-  width: 80%;
-  height: auto;
-  max-width: 800px;
-  border-radius: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-/* === FOOTER === */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: #111;
-  padding: 40px 60px;
-  color: white;
-  font-size: 0.9em;
-}
-
-.footer-left .logo {
-  font-size: 1.5em;
-  font-weight: 700;
-}
-
-.footer-center a,
-.footer-right a {
-  color: #d6a5f7;
-  text-decoration: none;
-}
-
-.footer-center p,
-.footer-right p {
-  margin: 6px 0;
-}
-
-.footer-left p {
-  margin: 5px 0;
+    max-width: 60%;
+    height: auto;
+    border-radius: 12px;
 }

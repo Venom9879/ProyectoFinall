@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qool - Nueva Consulta</title>
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/footer.css"> 
+  <link rel="stylesheet" href="../css/nueva-consulta.css"> 
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="header-container"></div>
+
+  <main class="main-content">
+    <div class="consulta-card">
+      
+      <div class="anonimato-section">
+        <p class="anonimato-label">¿Deseas que los demás vean tu nombre?</p>
+        <div class="anonimato-buttons">
+          <button class="btn-anonimo selected" id="btn-si">SI</button>
+          <button class="btn-anonimo" id="btn-no">NO</button>
+        </div>
+      </div>
+      
+      <form class="consulta-form">
+        <label for="titulo-consulta" class="form-label">Pregunta algo</label>
+        
+        <input type="text" id="titulo-consulta" placeholder="Escribe su duda aquí..." class="input-titulo">
+
+        <textarea id="contenido-consulta" placeholder="Escribe el contenido de tu duda aquí..." class="textarea-contenido"></textarea>
+
+        <button type="submit" id="btnEnviarConsulta">ENVIAR</button>
+      </form>
+
+    </div>
+  </main>
+
+  <footer></footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
